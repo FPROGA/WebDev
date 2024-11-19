@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    margin-top: 20px;
+    width: 1200px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Blocks */
+.block0 {
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    display: flex;
+
+
+}
+.block1 {
+    width: 100px;
+    height: 100px;
+    background-color: #FF0000;
+    display: flex;
+
+
+}
