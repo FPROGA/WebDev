@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        background-color: #4169E1;
+    }
+.scene {
+    position: relative;
+    display: flex;
+    justify-content: center;
+     width: 100%;
+}
+    .chevron {
+    margin-top: 400px;
+      position: relative;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 200px;
+
+    }
+    .chevron:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 51%;
+      background: purple;
+      transform: skew(0deg, 6deg);
+    }
+    .chevron:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      background: purple;
+      transform: skew(0deg, -6deg);
+    }
+    .square {
+        width: 10px;
+          height: 80px;
+          background: red;
+          transform: translateX(500%);
+
+    }
+      .parus {
+           width: 0;
+           height: 0;
+           border: 50px solid transparent;
+           border-bottom: 20px solid white;
+           position: relative;
+           top: -140px;
+           left: 52px;
+         }
+         .parus:after {
+           content: '';
+           position: absolute;
+           left: -50px;
+           top: 20px;
+           width: 0;
+           height: 0;
+           border: 50px solid transparent;
+           border-top: 70px solid white;
+         }
+
+        .triangle {
+        width: 0;
+        height: 0;
+          border-top: 40px solid transparent;
+              border-left: 50px solid red;
+              border-bottom: 40px solid transparent;
+        }
+
+
+       .krab {
+          box-shadow: 0 0 0 1em red,
+          0 1em 0 1em red,
+          -2.5em 1.5em 0 .5em red,
+          2.5em 1.5em 0 .5em red,
+          -3em -3em 0 0 red,
+          3em -3em 0 0 red,
+          -2em -2em 0 0 red,
+          2em -2em 0 0 red,
+          -3em -1em 0 0 red,
+          -2em -1em 0 0 red,
+          2em -1em 0 0 red,
+          3em -1em 0 0 red,
+          -4em 0 0 0 red,
+          -3em 0 0 0 red,
+          3em 0 0 0 red,
+          4em 0 0 0 red,
+          -5em 1em 0 0 red,
+          -4em 1em 0 0 red,
+          4em 1em 0 0 red,
+          5em 1em 0 0 red,
+          -5em 2em 0 0 red,
+          5em 2em 0 0 red,
+          -5em 3em 0 0 red,
+          -3em 3em 0 0 red,
+          3em 3em 0 0 red,
+          5em 3em 0 0 red,
+          -2em 4em 0 0 red,
+          -1em 4em 0 0 red,
+          1em 4em 0 0 red,
+          2em 4em 0 0 red;
+          background: red;
+          width: 1em;
+          height: 1em;
+          overflow: hidden;
+          margin: 100px 0 70px 65px;
+          margin: 100px;
+          position: relative;
+              top: 50px;
+        }
+
+        .krabs-container {
+            display: flex;
+            justify-content: center; /* Центрируем крабов по горизонтали */
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+
+
+
+
+
