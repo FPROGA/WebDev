@@ -9,6 +9,7 @@
          const display = document.getElementById('display');
          display.value = ''; // очищаем поле
      }
+
      function calculateInverse() {
             const display = document.getElementById('display');
             const currentValue = parseFloat(display.value);
@@ -40,8 +41,20 @@
      function calculateResult() {
          const display = document.getElementById('display');
          try {
-             display.value = eval(display.value.replace(':', '/'));
-
+              const expression = display.value.replace(/:/g, '/');
+              const result = eval(expression);
+             if (result == Infinity || result == -Infinity)
+             {
+                alert("Деление на ноль невозможно");
+                clearDisplay();
+                return;
+             }
+               if (isNaN(result)) {
+               alert("Ошибка в выражении");
+               clearDisplay();
+               return;
+               }
+               display.value = result;
          } catch (error) {
              alert("Ошибка в выражении");
              clearDisplay();
